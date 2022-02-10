@@ -32,7 +32,7 @@ services:
         environment:
             POSTGRES_USER: user
             POSTGRES_PASSWORD: secret
-            POSTGRES_DB: blog
+            POSTGRES_DB: first
         ports:
             - "91:81"
 
