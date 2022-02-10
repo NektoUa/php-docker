@@ -1,1 +1,9 @@
 version: "3.7"
+services:
+    php-cli:
+        build:
+            context: ./
+            dockerfile: docker/php-cli/Dockerfile
+        volumes:
+            - ./:/var/www
+            - composer:/root/.composer/cache
