@@ -8,4 +8,7 @@ RUN apt-get update && apt-get install -y libpq-dev unzip git libicu-dev \
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/bin --filename=composer --quiet
 
+# Что делает?
+# ENV COMPOSER_ALLOW_SUPERUSER 1
+
 WORKDIR /var/www
