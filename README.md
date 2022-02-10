@@ -1,2 +1,7 @@
 # php-docker
-homework
+## homework
+
+### Запуск
+```
+docker-compose build
+```

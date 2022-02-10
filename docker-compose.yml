@@ -3,7 +3,7 @@ services:
     nginx:
         build:
             context: ./
-            dockerfile: docker/development/nginx/Dockerfile
+            dockerfile: docker/nginx/Dockerfile
         volumes:
             - ./:/var/www
         ports:
@@ -24,4 +24,17 @@ services:
             dockerfile: docker/php-cli/Dockerfile
         volumes:
             - ./:/var/www
-            - composer:/root/.composer/cache
+            
+    postgres:
+        image: postgres:14.1-alpine
+        volumes:
+            - postgres:/var/lib/postgresql/data
+        environment:
+            POSTGRES_USER: user
+            POSTGRES_PASSWORD: secret
+            POSTGRES_DB: blog
+        ports:
+            - "91:81"
+
+volumes:
+    postgres:
