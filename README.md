@@ -3,5 +3,14 @@
 
 ### Запуск
 ```
-docker-compose build
+docker-build
+```
+
+```
+docker-up
+```
+
+
+```
+docker-down
 ```
