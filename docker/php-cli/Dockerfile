@@ -11,4 +11,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/bin --fil
 # Что делает?
 # ENV COMPOSER_ALLOW_SUPERUSER 1
 
-WORKDIR /var/www
+WORKDIR /var/www/bin

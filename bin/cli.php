@@ -1,13 +1,13 @@
 <?php
 phpinfo();
-// var_dump($argv);
+var_dump($argv);
 
-// unset($argv[0]);
+unset($argv[0]);
 
-// $sum = 0;
+$sum = 0;
 
-// foreach ($argv as $item) {
-//     $sum += $item;
-// }
+foreach ($argv as $item) {
+    $sum += $item;
+}
 
-// echo $sum;
+echo $sum;
